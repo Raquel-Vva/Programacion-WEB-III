@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 10px;
+            background-color: black;
+        }
+        header{
+            text-align: center;
+            line-height: 40px;
+            width: 100%;
+            height: 130px;
+            background-color: rgb(33, 212, 194);
+        }
+        .conteiner {
+            height: 510px;
+            line-height: 450px;
+            width: 97%;
+            padding: 20px;
+            border-radius: 200px;
+            background: lightgreen;
+            text-align: center;
+        }
+        footer{
+            background-color: aquamarine;
+            height: 130px;
+            line-height: 50px;
+        }
+        footer a{
+            color: rgb(0, 0, 0);
+            margin:5px;
+        }
+        @media(max-width:1000px) {
+            .conteiner{
+                background:cadetblue;
+                width: 95%;
+                margin: 5px auto;
+            }
+            
+        }
+        @media (max-width: 600px) {
+            .conteiner {
+                background: pink;
+                height: 100%;
+                width: 91%;
+                margin: 5px auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tipos de Layouts</h1>
+        <h3>Responsive Layout</h3>
+    </header>
+    <div class="conteiner">
+        <p>El color cambia en pantallas menores a 1000px o a 600px.</p>
+    </div>
+    <footer>
+        <a href="index.html">Volver Pagina Principal</a>
+        <br>
+        Contactos:
+        <a href="#">Whatssapp</a>
+        <a href="#">Ubicacion</a>
+        <a href="#">Facebook</a>
+        <a href="#">Tiktok</a>
+    </footer>
+</body>
+</html>
